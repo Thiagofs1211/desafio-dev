@@ -19,7 +19,7 @@ public class PessoaFisicaController {
 	private IPessoaFisicaRepository dao;
 
 	@GetMapping(path = "/listar")
-	public @ResponseBody List<PessoaFisica> listar() {
+	public @ResponseBody List<PessoaFisica> listar() { //EndPoint somente para testar o banco
 		return dao.findAll();
 	}
 }

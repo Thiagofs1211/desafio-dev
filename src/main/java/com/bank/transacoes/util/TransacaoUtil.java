@@ -40,7 +40,7 @@ public class TransacaoUtil {
 			logger.error("Tipo da transacao Invalida: "+transacaoDividida.get(0));
 			return null;
 		}
-		if(!verificaValorNumero(transacaoDividida.get(1)) && !verificaFormatoDataValida(transacaoDividida.get(1))) { //Verifica se a data está em um formato valido
+		if(!verificaValorNumero(transacaoDividida.get(1)) || !verificaFormatoDataValida(transacaoDividida.get(1))) { //Verifica se a data está em um formato valido
 			//Data Invalida
 			logger.error("data da transacao Invalida: "+transacaoDividida.get(1));
 			return null;
@@ -56,7 +56,7 @@ public class TransacaoUtil {
 			return null;
 		}
 		if(!verificaValorNumero(transacaoDividida.get(4).substring(0,4))
-				&& !"****".equals(transacaoDividida.get(4).substring(4,8)) && !verificaValorNumero(transacaoDividida.get(4).substring(8,12))) {
+				|| !"****".equals(transacaoDividida.get(4).substring(4,8)) || !verificaValorNumero(transacaoDividida.get(4).substring(8,12))) {
 			//Cartao Invalido
 			logger.error("Cartao da transacao Invalida: "+transacaoDividida.get(4));
 			return null;
