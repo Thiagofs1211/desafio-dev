@@ -21,14 +21,14 @@ import lombok.Getter;
 @Getter
 public enum TipoTransacaoEnum {
 	DEBITO("1", "Débito", "Entrada"),
-	BOLETO("2", "Boleto", "Saida"),
-	FINANCIAMENTO("3", "Financiamento", "Saida"),
-	CREDITO("4", "Credito", "Entrada"),
-	RECEBIMENTO_EMPRESTIMO("5", "Recebimento Emprestimo", "Entrada"),
+	BOLETO("2", "Boleto", "Saída"),
+	FINANCIAMENTO("3", "Financiamento", "Saída"),
+	CREDITO("4", "Crédito", "Entrada"),
+	RECEBIMENTO_EMPRESTIMO("5", "Recebimento Empréstimo", "Entrada"),
 	VENDAS("6", "Vendas", "Entrada"),
 	RECEBIMENTO_TED("7", "Recebimento TED", "Entrada"),
-	RECEBIMENTO_DOC("8", "Recebimento_DOC", "Entrada"),
-	ALUGUEL("9", "Aluguel", "Saida");
+	RECEBIMENTO_DOC("8", "Recebimento DOC", "Entrada"),
+	ALUGUEL("9", "Aluguel", "Saída");
 	
 	private String tipo;
 	private String descricao;
