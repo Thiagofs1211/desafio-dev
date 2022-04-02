@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bank.transacoes.irepository.IPessoaFisicaRepository;
 import com.bank.transacoes.model.PessoaFisica;
-import com.bank.transacoes.repository.IPessoaFisicaRepository;
 
 @RestController
 @RequestMapping(path = "/pessoaFisica")
