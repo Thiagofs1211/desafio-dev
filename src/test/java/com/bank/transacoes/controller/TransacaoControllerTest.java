@@ -23,7 +23,7 @@ public class TransacaoControllerTest {
 	
 	@Test
 	public void salvarTransacao() {
-		HttpStatus response = controller.salvarTransacoes();
+		HttpStatus response = controller.salvarTransacoes(Mockito.any());
 		assertThat(response).isEqualTo(HttpStatus.OK);
 	}
 	
