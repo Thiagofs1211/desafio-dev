@@ -4,8 +4,11 @@ Foi realizado a implementação do projeto utilizando Java 11, Springboot, Mysql
 A estrutura do projeto foi feita sendo MVC e a API pode ser acessada atraves das chamadas REST, os endpoint desenvolvidos são:
 
 https://localhost:8080/estabelecimento/listar - recupera a lista de estabelecimentos no banco
+
 https://localhost:8080/pessoaFisica/listar - endpoint de teste, apenas lista todos os clientes (não é utilzado pelo front)
+
 https://localhost:8080/transacao/salvarLote - Recebe uma string no corpo da requisição com as transações a serem salva no sistema
+
 https://localhost:8080/transacao/buscarTransacao/{id} - Recebe um id de estabelecimento passado no próprio caminho da url e recupera todas as transações do estabelecimento juntamente com o saldo total.
 
 Sobre a regra de négocio é considerado que caso a pessoa e o estabelecimento não existam eles são inseridos no banco antes das transações.
